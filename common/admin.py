@@ -28,3 +28,20 @@ class InventoryGroupAdmin(admin.ModelAdmin):
     inlines = [InventoryGroupInline]
 
 
+@admin.register(models.InventoryType)
+class InventoryTypeAdmin(admin.ModelAdmin):
+    list_display = ('name', 'code', 'organization')
+    list_filter = ('organization',)
+    readonly_fields = ['code']
+
+
+@admin.register(models.MeasureUnit)
+class MeasureUnitAdmin(admin.ModelAdmin):
+    list_display = ('name', 'organization', 'number_type')
+    list_filter = ('organization',)
+
+
+@admin.register(models.Attachment)
+class AttachmentAdmin(admin.ModelAdmin):
+    list_display = ['id', 'file', 'created_at']
+
