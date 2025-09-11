@@ -26,7 +26,7 @@ class Contract(BaseModel):
     def attachment_file(self, *args, **kwargs):
         attachment = get_attachments_by_object(self).first()
         if attachment:
-            return attachment.file
+            return attachment.file.url
         return None
 
 
