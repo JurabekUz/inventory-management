@@ -1,0 +1,6 @@
+
+python manage.py fill_common_data
+python manage.py fill_contract_data
+python manage.py fill_employee_data
+python manage.py fill_inventory_data
+python manage.py fill_stocktaking_data <organization_id>
