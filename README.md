@@ -29,3 +29,39 @@ A robust, enterprise-grade Inventory Management System built with Python/Django,
 ├── users/            # Custom User model and Authentication
 ├── common/ & utils/  # Reusable mixins, helpers, and base classes
 └── manage.py         # Django entry point
+```
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
+   cd your-repo-name
+   ```
+
+2. **Set up a virtual environment:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Apply migrations:**
+   ```bash
+   python manage.py migrate
+   ```
+
+5. **Run the development server:**
+   ```bash
+   python manage.py runserver
+   ```
+
+## 📸 QR Code Workflow
+The system generates a unique QR code for every registered asset. By scanning this QR code via a mobile interface or scanner, authorized personnel can:
+1. View asset specifications and current status.
+2. Update the asset's location or assignment.
+3. Perform rapid stocktaking during audits.
